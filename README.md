@@ -1,2 +1,2 @@
 # homepage
-Static file repo for aritraghosh.in
+This is a static file repo for aritraghosh.in.
