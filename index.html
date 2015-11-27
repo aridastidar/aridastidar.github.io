@@ -8,6 +8,7 @@
 
 <html lang="en">
   <head>
+    <link rel="canonical" href=" { { site.url } }{ { page.url } }" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -27,7 +28,7 @@
         <ul class="nav nav-pills">
           <li class="active"><a href="#">About</a></li>
           <li><a href="/projects">Projects</a></li>
-          <li><a href="http://blog.aritraghosh.in" target="_blank">Blog</a></li>
+          <li><a href="https://blog.aritraghosh.in" target="_blank">Blog</a></li>
           <li><a href="mailto:me@aritraghosh.in">Contact</a></li>
         </ul>
       </div>
@@ -56,10 +57,10 @@
           <div class="navbar-inner">
             <font size="2">Lovingly built using <a href="http://getbootstrap.com" target="_blank">Bootstrap</a><br>
               &copy; <a href="http://www.aritraghosh.in">aritraghosh.in</a>&nbsp;&nbsp;All rights reserved</font>
-              <p>
+              <!-- <p>
                 <a href="http://validator.w3.org/check?uri=referer"><img
-                  src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
-              </p>
+                  src="https://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+              </p>-->
           </div>
         </div>
       </div>
@@ -90,5 +91,9 @@
       ga('create', 'UA-44220692-1', 'aritraghosh.in');
       ga('send', 'pageview');
     </script>
-  </body>
+    <script type="text/javascript">
+      var host = "aritraghosh.in";
+      if ((host == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
+    </script>
 </html>
